@@ -25,8 +25,8 @@ const StoreCard = ({ store }: Props) => {
         <Image
           src={"/images/default-store.jpg"}
           alt={store.name}
-          width={260}
-          height={160}
+          width={500}
+          height={500}
           className="mx-auto rounded"
         />
       </Link>
