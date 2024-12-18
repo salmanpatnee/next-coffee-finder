@@ -1,7 +1,6 @@
 'use client'
-import { Button, Container, Flex, Grid, Heading, Text } from '@radix-ui/themes'
+import { Button, Container, Flex, Grid, Heading, Text } from '@radix-ui/themes';
 import Image from 'next/image';
-import React from 'react'
 
 interface Props {
   onButtonClick: () => void; 

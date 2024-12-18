@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Brewed Awakenings",
+    "imgUrl": "https://example.com/images/brewed_awakenings.jpg",
+    "websiteUrl": "https://brewedawakenings.com",
+    "address": "123 Coffee St, Downtown, Cityville",
+    "neighbourhood": "Downtown"
+  },
+  {
+    "id": 2,
+    "name": "The Java House",
+    "imgUrl": "https://example.com/images/the_java_house.jpg",
+    "websiteUrl": "https://thejavahouse.com",
+    "address": "456 Bean Blvd, Uptown, Cityville",
+    "neighbourhood": "Uptown"
+  },
+  {
+    "id": 3,
+    "name": "Café Mocha",
+    "imgUrl": "https://example.com/images/cafe_mocha.jpg",
+    "websiteUrl": "https://cafemocha.com",
+    "address": "789 Espresso Ave, Midtown, Cityville",
+    "neighbourhood": "Midtown"
+  },
+  {
+    "id": 4,
+    "name": "Latte Artistry",
+    "imgUrl": "https://example.com/images/latte_artistry.jpg",
+    "websiteUrl": "https://latteartistry.com",
+    "address": "101 Brew Ln, Eastside, Cityville",
+    "neighbourhood": "Eastside"
+  },
+  {
+    "id": 5,
+    "name": "The Daily Grind",
+    "imgUrl": "https://example.com/images/the_daily_grind.jpg",
+    "websiteUrl": "https://thedailygrind.com",
+    "address": "202 Perk Rd, Westside, Cityville",
+    "neighbourhood": "Westside"
+  },
+  {
+    "id": 6,
+    "name": "Bean & Barrel",
+    "imgUrl": "https://example.com/images/bean_barrel.jpg",
+    "websiteUrl": "https://beanandbarrel.com",
+    "address": "303 Mocha St, Riverside, Cityville",
+    "neighbourhood": "Riverside"
+  },
+  {
+    "id": 7,
+    "name": "Roast & Relax",
+    "imgUrl": "https://example.com/images/roast_relax.jpg",
+    "websiteUrl": "https://roastandrelax.com",
+    "address": "404 Latte Ln, Hilltop, Cityville",
+    "neighbourhood": "Hilltop"
+  },
+  {
+    "id": 8,
+    "name": "Espresso Corner",
+    "imgUrl": "https://example.com/images/espresso_corner.jpg",
+    "websiteUrl": "https://espressocorner.com",
+    "address": "505 Cappuccino Rd, Lakeside, Cityville",
+    "neighbourhood": "Lakeside"
+  },
+  {
+    "id": 9,
+    "name": "The Coffee Spot",
+    "imgUrl": "https://example.com/images/the_coffee_spot.jpg",
+    "websiteUrl": "https://thecoffeespot.com",
+    "address": "606 Brewed St, Oldtown, Cityville",
+    "neighbourhood": "Oldtown"
+  },
+  {
+    "id": 10,
+    "name": "Perk Palace",
+    "imgUrl": "https://example.com/images/perk_palace.jpg",
+    "websiteUrl": "https://perkpalace.com",
+    "address": "707 Aroma Ave, Suburbia, Cityville",
+    "neighbourhood": "Suburbia"
+  },
+  {
+    "id": 11,
+    "name": "The Beanery",
+    "imgUrl": "https://example.com/images/the_beanery.jpg",
+    "websiteUrl": "https://thebeanery.com",
+    "address": "808 Espresso Blvd, City Center, Cityville",
+    "neighbourhood": "City Center"
+  },
+  {
+    "id": 12,
+    "name": "Brew & Sip",
+    "imgUrl": "https://example.com/images/brew_sip.jpg",
+    "websiteUrl": "https://brewsip.com",
+    "address": "909 Java Rd, Downtown, Cityville",
+    "neighbourhood": "Downtown"
+  }
+]
