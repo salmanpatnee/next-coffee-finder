@@ -1,5 +1,4 @@
-"use client";
-import { Container, Grid, Heading } from "@radix-ui/themes";
+import { Grid, Heading } from "@radix-ui/themes";
 import Banner from "./components/Banner";
 import StoreCard from "./components/StoreCard";
 
@@ -18,13 +17,11 @@ const Home = async () => {
     "@/data/coffee-stores.json"
   ).then((module) => module.default);
 
-  const handleButtonClick = () => {
-    alert("Clicked");
-  };
+  
 
   return (
     <>
-      <Banner onButtonClick={handleButtonClick} />
+      <Banner/>
 
       <Heading as="h2" color="brown" size={"8"} mb={"5"}>
         Coffee Stores
