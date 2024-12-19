@@ -13,7 +13,7 @@ const Banner = ({onButtonClick}: Props) => {
       <Container>
         <Grid columns={{initial: "1", sm: "2"}} gap="5" align={'center'}>
           <Flex direction="column"  gap="5">
-            <Heading className='text-white' size={'9'} weight={'bold'}>Find Your Perfect Coffee</Heading>
+            <Heading color='brown' size={'9'} weight={'bold'}>Find Your Perfect Coffee</Heading>
             <Text  as='p' size={'5'} className='text-white'>Explore a wide range of coffees, from bold brews to smooth blends, tailored just for you.</Text>
             <Button size={'4'} variant='surface' onClick={onButtonClick}>Start Your Search</Button>
           </Flex>
