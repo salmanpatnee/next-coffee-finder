@@ -1,41 +1,31 @@
-import React from "react";
-import { CoffeeStore } from "@/app/page";
-import { Box, Grid, Heading, Text } from "@radix-ui/themes";
-import Link from "next/link";
+import { fetchCoffeeStore, fetchCoffeeStores } from "@/lib/api";
+import { CoffeeStore } from "@/lib/types";
+import { Box, Button, Grid, Heading, Text } from "@radix-ui/themes";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
-import { IoMdArrowBack } from "react-icons/io";
 import { FaLocationDot } from "react-icons/fa6";
-import { FaGlobe } from "react-icons/fa";
+import { IoMdArrowBack } from "react-icons/io";
+import { MdOutlineRateReview } from "react-icons/md";
 
 interface Props {
   params: { id: string }; // Note: id will be a string in Next.js dynamic routing
 }
 
-const fetchCoffeeStore = async (id: string): Promise<CoffeeStore | null> => {
-  const coffeeStores: CoffeeStore[] = await import(
-    "@/data/coffee-stores.json"
-  ).then((module) => module.default);
-
-  // Find the coffee store by id
-  return coffeeStores.find((store) => store.id === parseInt(id)) || null;
-};
-
 // Generate static params for dynamic routes
 export const generateStaticParams = async () => {
-  const coffeeStores: CoffeeStore[] = await import(
-    "@/data/coffee-stores.json"
-  ).then((module) => module.default);
+  const coffeeStores: CoffeeStore[] = await fetchCoffeeStores()
 
   // Return an array of params with id as a string
   return coffeeStores.map((store) => ({
-    id: store.id.toString(), // Ensure id is a string
+    id: store.fsq_id,
   }));
 };
 
 const CoffeeStorePage = async ({ params }: Props) => {
 
   const coffeeStore = await fetchCoffeeStore(params.id)
+  
 
   if (!coffeeStore) {
     return notFound();
@@ -61,16 +51,17 @@ const CoffeeStorePage = async ({ params }: Props) => {
           />
         </Box>
         <Box>
-          <ul className="flex flex-col gap-4">
+          <ul className="flex flex-col gap-4 mb-4">
             <li>
               <FaLocationDot className="inline me-2"  />
-              <Text size={"5"}>{coffeeStore.address}</Text>
+              <Text size={"5"}>{coffeeStore.location?.formatted_address}</Text>
             </li>
             <li>
-              <FaGlobe className="inline me-2" />
-              <Text size={"5"}>{coffeeStore.websiteUrl}</Text>
+            <MdOutlineRateReview className="inline me-2"/>
+              <Text size={"5"}>{coffeeStore.rating}</Text>
             </li>
           </ul>
+          <Button size={"3"}>Vote</Button>
         </Box>
       </Grid>
     </Box>

@@ -1,8 +1,7 @@
+import { CoffeeStore } from "@/lib/types";
 import { Card, Heading } from "@radix-ui/themes";
 import Image from "next/image";
 import Link from "next/link";
-import { CoffeeStore } from "../page";
-
 
 interface Props {
   store: CoffeeStore;
@@ -10,8 +9,8 @@ interface Props {
 
 const StoreCard = ({ store }: Props) => {
   return (
-    <Card key={store.id}>
-      <Link href={`/coffee-store/${store.id}`}>
+    <Card key={store.fsq_id}>
+      <Link href={`/coffee-store/${store.fsq_id}`}>
         <Heading as="h2" size={"4"} color="brown" mb={"3"} align={"center"}>
           {store.name}
         </Heading>
